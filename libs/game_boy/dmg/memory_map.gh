@@ -1,0 +1,14 @@
+import ^dmg/address:Address;
+
+export memory_map : object = {
+	rom : range<Address> = (0000)..(7FFF),
+	vram : range<Address> = (8000)..(9FFF),
+	eram : range<Address> = (A000)..(BFFF),
+	wram : range<Address> = (C000)..(DFFF),
+	unused_1 : range<Address> = (E000)..(FDFF),
+	oam : range<Address> = (FE00)..(FE9F),
+	unused_2: range<Address> = (FEA0)..(FEFF),
+	io_registers : range<Address> = (FF00)..(FF7F),
+	hram : range<Address> = (FF80)..(FFFE),
+	ie : range<Address> = (FFFF)..(FFFF),
+};
