@@ -1,4 +1,5 @@
-# Casper :: Variables :: Declaration Keywords
+[Casper :: Docs](https://github.com/stated-plainly/sp__casper/tree/main/docs) :: [Variables](https://github.com/stated-plainly/sp__casper/tree/main/docs/variables)
+# Declaration Keywords
 There are two aspects to the mutability of a variable:
 - Internal Mutability => A value within the instance that the variable holds is changed
 - External Mutability => The instance that the variable itself holds is changed
