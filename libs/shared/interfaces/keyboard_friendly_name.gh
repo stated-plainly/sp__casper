@@ -1,3 +1,0 @@
-export interface KeyboardFriendlyName {
-	pub keyboard_friendly_name (self : ^self) => string;
-}

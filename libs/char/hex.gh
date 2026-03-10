@@ -1,4 +1,4 @@
-export char Hex => string<bit> x 4 {
+export char Hex => (4)bit {
 	0 => (0000),
 	1 => (0001),
 	2 => (0010),

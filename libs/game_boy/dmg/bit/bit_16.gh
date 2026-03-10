@@ -20,7 +20,7 @@ export enum Bit16 {
 }
 
 implement Bit for Bit16 {
-	pub index_of (self : ^Self) => u8 {
+	pub index_of (self : borrow Self) => u8 {
 		match self^ {
 			[0] => 15,
 			[1] => 14,

@@ -1,0 +1,5 @@
+import ^libs/char/char:Char;
+
+export interface KeyboardFriendlyName {
+	pub keyboard_friendly_name (self : borrow Self) => String;
+}

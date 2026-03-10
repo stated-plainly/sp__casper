@@ -12,8 +12,8 @@ export enum Bit8 {
 }
 
 implement Bit for Bit8 {
-	pub index_of (self : ^Self) => u8 {
-		match self^ {
+	pub index_of (self : borrow Self) => u8 {
+		match self {
 			[0] => 7,
 			[1] => 6,
 			[2] => 5,

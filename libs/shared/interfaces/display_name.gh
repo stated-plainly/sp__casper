@@ -1,3 +1,0 @@
-export interface DisplayName {
-	pub display_name (self : ^self) => string;
-}

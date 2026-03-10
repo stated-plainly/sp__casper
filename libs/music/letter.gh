@@ -1,6 +1,7 @@
-import ^libs/shared/interfaces/display_name::DisplayName;
-import ^libs/shared/interfaces/keyboard_friendly_name::KeyboardFriendlyName;
-import ^libs/shared/interfaces/random::Random;
+import ^libs/string/string:String;
+import ^libs/interfaces/display_name:DisplayName;
+import ^libs/interfaces/keyboard_friendly_name:KeyboardFriendlyName;
+import ^libs/interfaces/random:Random;
 
 export enum Letter {
 	[c],
@@ -13,8 +14,8 @@ export enum Letter {
 }
 
 implement DisplayName for Letter {
-	pub display_name (self : ^self) => string {
-		match self^ {
+	pub display_name (self : borrow Self) => String {
+		match self {
 			[c] => (C),
 			[d] => (D),
 			[e] => (E),
@@ -27,8 +28,8 @@ implement DisplayName for Letter {
 }
 
 implement KeyboardFriendlyName for Letter {
-	pub keyboard_friendly_name (self : ^self) => string {
-		match self^ {
+	pub keyboard_friendly_name (self : borrow Self) => String {
+		match self {
 			[c] => (c),
 			[d] => (d),
 			[e] => (e),
@@ -41,18 +42,18 @@ implement KeyboardFriendlyName for Letter {
 }
 
 implement Random for Letter {
-	pub random () => self {
-		i : u8 = u8.random_in_range(0..7);
+	pub random () => Self {
+		i : u8 = u8.random_in_range(0..6);
 
 		match i {
-			(0) => [c],
-			(1) => [d],
-			(2) => [e],
-			(3) => [f],
-			(4) => [g],
-			(5) => [a],
-			(6) => [b],
-			(_) >> runtime.die(The generation of 'i' on line 45 is incorrect and needs to be reviewed. The value should be in the range of 0 to 6 (inclusive).),
+			0 => [c],
+			1 => [d],
+			2 => [e],
+			3 => [f],
+			4 => [g],
+			5 => [a],
+			6 => [b],
+			_ >> runtime.die(The generation of 'i' on line 46 is incorrect and needs to be reviewed. The value should be in the range of 0 to 6 (inclusive).),
 		}
 	}
 }

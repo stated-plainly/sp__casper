@@ -1,7 +1,7 @@
 import ^dmg/bit/bit_16:Bit16;
 import ^register/register:Register;
 
-export alias Register16 : string<bit> x 16;
+export alias Register16 : (16)bit;
 
 implement Register for Register16 {
 	pub flip_bit (inmut self : take Self, bit : copy Bit16) => Self {
