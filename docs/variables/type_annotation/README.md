@@ -11,5 +11,5 @@ In contrast, if the programmer **must** specify the type of data that they're ex
 
 As such, in **casper** all variable declarations must be annotated, using the following syntax:
 ```casper
-name : (?)Char = prompt_user_for_name(); -- here, we specify explicitly that we're expecting a string of characters, of unknown length, to be returned
+name : String = prompt_user_for_name(); -- here, we specify explicitly that we're expecting a String to be returned
 ```
