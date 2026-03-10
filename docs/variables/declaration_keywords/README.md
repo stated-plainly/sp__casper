@@ -12,7 +12,7 @@ There are two aspects to the mutability of a variable:
 - `mut` → **Internally Mutable** :: **Externally Mutable**
 
 
-`{immut}` is wrapped in `{}` to indicate its implicit nature i.e. a variable declared without a declaration keyword is `{immut}`:
+`{immut}` is wrapped in `{}` to indicate its **implicit** nature i.e. a variable declared without a declaration keyword is `{immut}`:
 ```casper
 age : u8 = 10; -- this variable is {immut}
 ```
