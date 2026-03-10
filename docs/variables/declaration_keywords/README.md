@@ -5,11 +5,11 @@ There are two aspects to the mutability of a variable:
 
 **casper** captures these inter-related states using the following declaration keywords:
 - `{immut}` => Internally Immutable :: Externally Immutable
-- `mut:in` => Internally Mutable :: Externally Immutable
-- `mut:ex` => Internally Immutable :: Externally Mutable
-- `mut` => Internally Mutable :: Externally Mutable
+- `inmut` => Internally **Mutable** :: Externally Immutable
+- `exmut` => Internally Immutable :: Externally **Mutable**
+- `mut` => Internally **Mutable** :: Externally **Mutable**
 
 `{immut}` is wrapped in `{}` to indicate its implicit nature i.e. a variable declared without a declaration keyword is `{immut}`:
 ```casper
-age : Int = (10); -- this variable is {immut}
+age : u8 = 10; -- this variable is {immut}
 ```
