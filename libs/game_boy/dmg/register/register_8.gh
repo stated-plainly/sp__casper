@@ -1,0 +1,12 @@
+import ^dmg/bit/bit_8:Bit8;
+import ^register/register:Register;
+
+export alias Register8 : string<bit> x 8;
+
+implement Register for Register8 {
+	pub flip_bit (inmut self : take Self, bit : copy Bit8) => Self {
+		self[bit.index_of()] = !ditto;
+
+		return self;
+	}
+}

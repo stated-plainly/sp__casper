@@ -1,0 +1,27 @@
+import ^bit/bit:Bit;
+
+export enum Bit8 {
+	[0],
+	[1],
+	[2],
+	[3],
+	[4],
+	[5],
+	[6],
+	[7],
+}
+
+implement Bit for Bit8 {
+	pub index_of (self : ^Self) => u8 {
+		match self^ {
+			[0] => 7,
+			[1] => 6,
+			[2] => 5,
+			[3] => 4,
+			[4] => 3,
+			[5] => 2,
+			[6] => 1,
+			[7] => 0,
+		}
+	}
+}
