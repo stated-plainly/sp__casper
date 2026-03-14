@@ -1,3 +1,0 @@
-export interface Bit {
-	pub index_of (self : borrow Self) => u8;
-}

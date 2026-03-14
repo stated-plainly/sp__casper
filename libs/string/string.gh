@@ -1,3 +1,0 @@
-import ^libs/char/char:Char;
-
-export alias String : (?)Char;

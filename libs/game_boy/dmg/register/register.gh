@@ -1,5 +1,0 @@
-import ^dmg/bit:Bit;
-
-export interface Register {
-	pub flip_bit (inmut self : take Self, bit : borrow Bit) => Self;
-}

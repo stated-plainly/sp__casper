@@ -1,3 +1,0 @@
-import ^libs/char/hex:Hex;
-
-export alias Address : (4)Hex;

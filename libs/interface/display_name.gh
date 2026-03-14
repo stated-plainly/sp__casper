@@ -1,5 +1,0 @@
-import ^libs/string/string:String;
-
-export interface DisplayName {
-	pub display_name (self : borrow Self) => String;
-}
