@@ -1,2 +1,0 @@
-type: (lib)
-name: (core)
