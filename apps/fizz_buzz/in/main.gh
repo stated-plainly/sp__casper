@@ -1,7 +1,7 @@
 alias N = int:(1..1_000);
 
 main () => CauseOfDeath {
-	n : N = try cast(args[0]) otherwise => [UserError :: `Must pass an n value between 1 and 1000 e.g. "fizz_buzz 10" (n = 10 in this case).`];
+	n : N = try cast(args[0]) otherwise => [UserError :: `Must pass an n value between 1 and 1_000 e.g. "fizz_buzz 10" (n = 10 in this case).`];
 
 	for i : N in 1..n {
 		if ((i % 3) == 0) && ((i % 5) == 0) {
